@@ -7,7 +7,12 @@
         xmlns:local="clr-namespace:TMH_Verification"
         mc:Ignorable="d"
         Title="TMH Verification" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <Controls:MetroWindow.Flyouts>
+        <Controls:FlyoutsControl >
+            <Controls:Flyout Header="Flyout" Position="Right" Width="200" Theme="Inverse">
+                <!-- Your custom content here -->
+                <Button></Button>
+            </Controls:Flyout>
+        </Controls:FlyoutsControl>
+    </Controls:MetroWindow.Flyouts>
 </Controls:MetroWindow>
