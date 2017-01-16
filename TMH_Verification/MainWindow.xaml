@@ -1,12 +1,13 @@
-﻿<Window x:Class="TMH_Verification.MainWindow"
+﻿<Controls:MetroWindow x:Class="TMH_Verification.MainWindow"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TMH_Verification"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="TMH Verification" Height="350" Width="525">
     <Grid>
         
     </Grid>
-</Window>
+</Controls:MetroWindow>
