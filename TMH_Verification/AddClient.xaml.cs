@@ -12,25 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MahApps.Metro.Controls;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
 
 namespace TMH_Verification
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AddClient.xaml
     /// </summary>
-    public partial class MainWindow : MetroWindow
+    public partial class AddClient : Page
     {
-        public MainWindow()
+        public AddClient()
         {
             InitializeComponent();
-        }
-        void MenuButtonClick(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
