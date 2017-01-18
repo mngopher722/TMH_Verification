@@ -32,5 +32,9 @@ namespace TMH_Verification
         {
 
         }
+        private void ToggleFlyoutSetting(object sender, RoutedEventArgs e)
+        {
+            flyout.IsOpen = !flyout.IsOpen;
+        }
     }
 }

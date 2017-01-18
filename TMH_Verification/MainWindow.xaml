@@ -6,16 +6,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TMH_Verification"
         mc:Ignorable="d"
-        Title="TMH Verification" Height="350" Width="525">
+        Title="TMH Verification" Height="350" Width="525" Background="Gray">
     <Controls:MetroWindow.Flyouts>
-        <Controls:FlyoutsControl >
-            <Controls:Flyout Header="Flyout" Position="Right" Width="200" Theme="Inverse">
+        <Controls:FlyoutsControl Name="FlyoutControlSettings" Background="AliceBlue">
+            <Controls:Flyout x:Name="flyout" Header="Menu" Position="Left" Width="200" Theme="Accent" IsOpen="False" BorderBrush="Black" BorderThickness="3,0,3,3">
+                <TextBlock FontSize="24">Hello World</TextBlock>
                 <!-- Your custom content here -->
-                <Button></Button>
             </Controls:Flyout>
         </Controls:FlyoutsControl>
     </Controls:MetroWindow.Flyouts>
     <Button x:Name="MenuButton" Width="75" Height="75" Click="MenuButtonClick">
         <Image Source="C:\Users\ryan\documents\visual studio 2015\Projects\TMH_Verification\TMH_Verification\Resources\Icons\appbar.layer.png" Height="75" Width="75" RenderTransformOrigin="0.5,0.489"></Image>
     </Button>
+    <Controls:MetroWindow.RightWindowCommands>
+        <Controls:WindowCommands>
+            <ToggleButton Content="Layers" 
+        IsChecked="{Binding ElementName=flyout, Path=IsOpen}" Cursor="Hand"/>
+        </Controls:WindowCommands>
+    </Controls:MetroWindow.RightWindowCommands>
 </Controls:MetroWindow>
