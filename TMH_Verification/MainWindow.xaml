@@ -12,7 +12,7 @@
             <Controls:Flyout x:Name="flyout" Header="Menu" Position="Left" Width="200" Theme="Accent" IsOpen="False" BorderBrush="Black" BorderThickness="3,0,3,3">
                 <Canvas>
                     <StackPanel>
-                    <TextBlock FontSize="12">Add Client</TextBlock>
+                        <TextBlock FontSize="12" Padding="30,3,3,3"><Hyperlink NavigateUri="AddClient.xaml" Click="">Add Client</Hyperlink></TextBlock>
                     <!--<TextBlock FontSize="24">Add Job</TextBlock>
                 <TextBlock FontSize="24">Add User</TextBlock>
                 <TextBlock FontSize="24">Configure Job</TextBlock>-->

@@ -36,5 +36,10 @@ namespace TMH_Verification
         {
             flyout.IsOpen = !flyout.IsOpen;
         }
+
+        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
