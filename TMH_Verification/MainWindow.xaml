@@ -12,11 +12,106 @@
             <Controls:Flyout x:Name="flyout" Header="Menu" Position="Left" Width="200" Theme="Accent" IsOpen="False" BorderBrush="Black" BorderThickness="3,0,3,3">
                 <Canvas>
                     <StackPanel>
-                        <TextBlock FontSize="12" Padding="30,3,3,3"><Hyperlink NavigateUri="AddClient.xaml" Click="">Add Client</Hyperlink></TextBlock>
-                    <!--<TextBlock FontSize="24">Add Job</TextBlock>
-                <TextBlock FontSize="24">Add User</TextBlock>
-                <TextBlock FontSize="24">Configure Job</TextBlock>-->
-                    <!-- Your custom content here -->
+                        <TextBlock FontSize="24" Padding="30,3,3,3">
+                            <Hyperlink NavigateUri="MainWindow.xaml" Click="home_Click">
+                                <Hyperlink.Style>
+                                    <Style TargetType="{x:Type Hyperlink}"
+                                           BasedOn="{StaticResource {x:Type Hyperlink}}">
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="Gray"></Setter>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Style>
+                                </Hyperlink.Style>
+                                Home
+                            </Hyperlink>
+                        </TextBlock>
+                        <TextBlock FontSize="24" Padding="30,3,3,3">
+                            <Hyperlink NavigateUri="AddClient.xaml" Click="addClient_Click">
+                                <Hyperlink.Style>
+                                    <Style TargetType="{x:Type Hyperlink}"
+                                           BasedOn="{StaticResource {x:Type Hyperlink}}">
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="Gray"></Setter>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Style>
+                                </Hyperlink.Style>
+                                Add Client
+                            </Hyperlink>
+                        </TextBlock>
+                        <TextBlock FontSize="24" Padding="30,3,3,3">
+                            <Hyperlink NavigateUri="AddJob.xaml">
+                                <Hyperlink.Style>
+                                    <Style TargetType="{x:Type Hyperlink}"
+                                           BasedOn="{StaticResource {x:Type Hyperlink}}">
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="Gray"></Setter>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Style>
+                                </Hyperlink.Style>
+                                Add Job
+                            </Hyperlink>
+                        </TextBlock>
+                        <TextBlock FontSize="24" Padding="30,3,3,3">
+                            <Hyperlink NavigateUri="AddUser.xaml">
+                                <Hyperlink.Style>
+                                    <Style TargetType="{x:Type Hyperlink}"
+                                           BasedOn="{StaticResource {x:Type Hyperlink}}">
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="Gray"></Setter>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Style>
+                                </Hyperlink.Style>
+                                Add User
+                            </Hyperlink>
+                        </TextBlock>
+                        <TextBlock FontSize="24" Padding="30,3,3,3">
+                            <Hyperlink NavigateUri="ConfigureJob.xaml">
+                                <Hyperlink.Style>
+                                    <Style TargetType="{x:Type Hyperlink}"
+                                           BasedOn="{StaticResource {x:Type Hyperlink}}">
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="Gray"></Setter>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Style>
+                                </Hyperlink.Style>
+                                Configure Job
+                            </Hyperlink>
+                        </TextBlock>
+                        <TextBlock FontSize="24" Padding="30,3,3,3">
+                            <Hyperlink NavigateUri="Reports.xaml">
+                                <Hyperlink.Style>
+                                    <Style TargetType="{x:Type Hyperlink}"
+                                           BasedOn="{StaticResource {x:Type Hyperlink}}">
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="Foreground" Value="Gray"></Setter>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                        <Setter Property="Foreground" Value="White"/>
+                                    </Style>
+                                </Hyperlink.Style>
+                                Reports
+                            </Hyperlink>
+                        </TextBlock>
+                        <!--<TextBlock FontSize="24">Add Job</TextBlock>
+                        <TextBlock FontSize="24">Add User</TextBlock>
+                        <TextBlock FontSize="24">Configure Job</TextBlock>-->
+                        <!-- Your custom content here -->
                     </StackPanel>
                 </Canvas>
             </Controls:Flyout>
@@ -28,7 +123,7 @@
     <Controls:MetroWindow.LeftWindowCommands>
         <Controls:WindowCommands>
             <ToggleButton Content="Menu" 
-        IsChecked="{Binding ElementName=flyout, Path=IsOpen}" Cursor="Hand"/>
+                IsChecked="{Binding ElementName=flyout, Path=IsOpen}" Cursor="Hand"/>
         </Controls:WindowCommands>
     </Controls:MetroWindow.LeftWindowCommands>
 </Controls:MetroWindow>

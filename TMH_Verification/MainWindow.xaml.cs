@@ -37,9 +37,18 @@ namespace TMH_Verification
             flyout.IsOpen = !flyout.IsOpen;
         }
 
-        private void Hyperlink_Click(object sender, RoutedEventArgs e)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void addClient_Click(object sender, RoutedEventArgs e)
         {
-
+            //this.addClient_Click.Show
+        }
+        private void home_Click(object sender, RoutedEventArgs e)
+        {
+            //this.addClient_Click.Show
         }
     }
 }
