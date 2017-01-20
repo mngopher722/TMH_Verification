@@ -29,7 +29,7 @@
                             </Hyperlink>
                         </TextBlock>
                         <TextBlock FontSize="24" Padding="30,3,3,3">
-                            <Hyperlink NavigateUri="AddClient.xaml" Click="addClient_Click">
+                            <Hyperlink NavigateUri="AddClient.xaml" Click="home_Click">
                                 <Hyperlink.Style>
                                     <Style TargetType="{x:Type Hyperlink}"
                                            BasedOn="{StaticResource {x:Type Hyperlink}}">
