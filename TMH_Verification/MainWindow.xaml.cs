@@ -27,6 +27,7 @@ namespace TMH_Verification
         public MainWindow()
         {
             InitializeComponent();
+            NavigationService ns = NavigationService.GetNavigationService(this);
         }
         void MenuButtonClick(object sender, RoutedEventArgs e)
         {
@@ -44,9 +45,27 @@ namespace TMH_Verification
         /// <param name="e"></param>
         private void addClient_Click(object sender, RoutedEventArgs e)
         {
-            //this.addClient_Click.Show
+            AddClientPage AddClient = new AddClientPage();
+            
+            //this.Frame.Navigate(typeof(AddClient), null);
         }
         private void home_Click(object sender, RoutedEventArgs e)
+        {
+            //this.addClient_Click.Show
+        }
+        private void addJob_Click(object sender, RoutedEventArgs e)
+        {
+            //this.addClient_Click.Show
+        }
+        private void addUser_Click(object sender, RoutedEventArgs e)
+        {
+            //this.addClient_Click.Show
+        }
+        private void configure_Click(object sender, RoutedEventArgs e)
+        {
+            //this.addClient_Click.Show
+        }
+        private void reports_Click(object sender, RoutedEventArgs e)
         {
             //this.addClient_Click.Show
         }

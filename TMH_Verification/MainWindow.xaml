@@ -6,13 +6,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TMH_Verification"
         mc:Ignorable="d"
-        Title="TMH Verification" Height="350" Width="525" Background="Gray" WindowStartupLocation="CenterScreen" ShowIconOnTitleBar="True" >
+        Title="TMH Verification" Height="450" Width="525" Background="Gray" WindowStartupLocation="CenterScreen" ShowIconOnTitleBar="True" >
     <Controls:MetroWindow.Flyouts>
         <Controls:FlyoutsControl Name="FlyoutControlSettings" Background="AliceBlue">
-            <Controls:Flyout x:Name="flyout" Header="Menu" Position="Left" Width="200" Theme="Accent" IsOpen="False" BorderBrush="Black" BorderThickness="3,0,3,3">
+            <Controls:Flyout x:Name="flyout" Header="Menu" Position="Left" Width="250" Theme="Accent" IsOpen="False" BorderBrush="Black" BorderThickness="3,0,3,3">
                 <Canvas>
                     <StackPanel>
                         <TextBlock FontSize="24" Padding="30,3,3,3">
+                            <Button x:Name="homebtn" Click="home_Click"  Content="&#xE10F;" FontFamily="Segoe MDL2 Assets" FontSize="36" />
                             <Hyperlink NavigateUri="MainWindow.xaml" Click="home_Click">
                                 <Hyperlink.Style>
                                     <Style TargetType="{x:Type Hyperlink}"
@@ -29,7 +30,8 @@
                             </Hyperlink>
                         </TextBlock>
                         <TextBlock FontSize="24" Padding="30,3,3,3">
-                            <Hyperlink NavigateUri="AddClient.xaml" Click="home_Click">
+                            <Button x:Name="clientbtn" Click="addClient_Click" Content="&#xEC07;" FontFamily="Segoe MDL2 Assets" FontSize="36"/>
+                            <Hyperlink NavigateUri="AddClient.xaml" Click="addClient_Click">
                                 <Hyperlink.Style>
                                     <Style TargetType="{x:Type Hyperlink}"
                                            BasedOn="{StaticResource {x:Type Hyperlink}}">
@@ -45,6 +47,7 @@
                             </Hyperlink>
                         </TextBlock>
                         <TextBlock FontSize="24" Padding="30,3,3,3">
+                            <Button x:Name="jobbtn" Click="addJob_Click" Content="&#xE821;" FontFamily="Segoe MDL2 Assets" FontSize="36" />
                             <Hyperlink NavigateUri="AddJob.xaml">
                                 <Hyperlink.Style>
                                     <Style TargetType="{x:Type Hyperlink}"
@@ -61,6 +64,7 @@
                             </Hyperlink>
                         </TextBlock>
                         <TextBlock FontSize="24" Padding="30,3,3,3">
+                            <Button x:Name="userbtn" Click="addUser_Click" Content="&#xE1E2;" FontFamily="Segoe MDL2 Assets" FontSize="36"/>
                             <Hyperlink NavigateUri="AddUser.xaml">
                                 <Hyperlink.Style>
                                     <Style TargetType="{x:Type Hyperlink}"
@@ -77,6 +81,7 @@
                             </Hyperlink>
                         </TextBlock>
                         <TextBlock FontSize="24" Padding="30,3,3,3">
+                            <Button x:Name="configbtn" Click="configure_Click" Content="&#xE713;" FontFamily="Segoe MDL2 Assets" FontSize="36"/>
                             <Hyperlink NavigateUri="ConfigureJob.xaml">
                                 <Hyperlink.Style>
                                     <Style TargetType="{x:Type Hyperlink}"
@@ -93,6 +98,7 @@
                             </Hyperlink>
                         </TextBlock>
                         <TextBlock FontSize="24" Padding="30,3,3,3">
+                            <Button x:Name="reportsbtn" Click="reports_Click" Content="&#xE12A;" FontFamily="Segoe MDL2 Assets" FontSize="36"/>
                             <Hyperlink NavigateUri="Reports.xaml">
                                 <Hyperlink.Style>
                                     <Style TargetType="{x:Type Hyperlink}"
